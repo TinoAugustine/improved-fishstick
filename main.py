@@ -32,10 +32,12 @@ with col3:
         st.header(row["title"])
         st.write(row["description"])
         st.image("images/"+row["image"])
+        st.write(f"[Source Code]({row['url']})")
 
 with col4:
     for index, row in df[10:].iterrows():
         st.header(row["title"])
         st.write(row["description"])
         st.image("images/"+row["image"])
+        st.write(f"[Source Code]({row['url']})")
 
